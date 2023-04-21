@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Informações de Reciclagem</title>
+</head>
+<body>
+    {% if recycling_info %}
+        <h1>Informações de Reciclagem para {{ product_name }}</h1>
+        <p>{{ recycling_info }}</p>
+        <h2>Story</h2>
+        <p>{{ recycling_story }}</p>
+    {% else %}
+        <h1>Informações de Reciclagem não encontradas para {{ product_name }}</h1>
+    {% endif %}
+    <form method="POST">
+        {% csrf_token %}
+        <label for="product_name">Nome do Produto:</label>
+        <input type="text" name="product_name" id="product_name">
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
