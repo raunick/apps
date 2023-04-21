@@ -8,6 +8,8 @@ Este é um projeto simples em HTML e Python que permite ao usuário digitar o no
 
 ## Python
 
+## GPT-3 OPENAI
+
 
 # Como utilizar 🤔 
 
